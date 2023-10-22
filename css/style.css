@@ -91,3 +91,57 @@ button:hover {
   a[href="#main"]:focus {
     display: block;
   }
+  .food-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two columns */
+    grid-gap: 5px; /* Adjust the gap between images */
+    text-align: center;
+}
+
+.food1 {
+    grid-column: 1 / span 2; /* Span two columns for the top image */
+}
+
+.food2, .food3 {
+    align-self: end; /* Align the second and third images to the bottom */
+}
+
+/* Additional styling for images (e.g., width, height, etc.) */
+.food-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two columns */
+    grid-template-rows: repeat(2, 1fr); /* Create two rows */
+    grid-gap: 1px; /* Adjust the gap between images */
+    text-align: center;
+}
+
+.pet1 {
+    grid-column: 1; /* Align first image to the left column */
+    grid-row: 1; /* Align it to the top row */
+}
+
+.pet2 {
+    grid-column: 2; /* Align second image to the right column */
+    grid-row: 1; /* Align it to the top row */
+}
+
+.pet3 {
+    grid-column: 1; /* Align third image to the left column */
+    grid-row: 2; /* Align it to the bottom row */
+}
+
+.pet4 {
+    grid-column: 2; /* Align fourth image to the right column */
+    grid-row: 2; /* Align it to the bottom row */
+}
+
+/* Additional styling for images (e.g., width, height, etc.) */
+.pet-grid img {
+    max-width: 100%;
+    height: auto;
+}
