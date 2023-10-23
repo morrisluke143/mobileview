@@ -1,6 +1,7 @@
 body{
-    background-color: blueviolet;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: 	#5A5A5A;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 h1{
@@ -29,6 +30,8 @@ img{
     padding: 10px;
     margin: 20px;
     border-top-right-radius: 30px;
+    align-items: center;
+    border-color: black;
 
 }
 
@@ -36,29 +39,29 @@ nav{
     border: 2px solid black;
 }
 .navbar {
-    list-style-type: none; /* Remove default list styling */
-    padding: 20px 0; /* Remove any default padding */
-    margin: 0; /* Remove any default margin */
-    background-color: #333; /* Set a background color for the navbar */
+    list-style-type: none;
+    padding: 20px 0;
+    margin: 0;
+    background-color: #333;
     text-align: center;
 }
 
 .navbar li {
-    display: inline; /* Display list items horizontally */
-    margin: 0 20px; /* Add some space between list items */
+    display: inline;
+    margin: 0 20px;
 }
 
 .navbar a {
     text-decoration: none;
-    color: white; /* Set link color */
+    color: white;
     line-height: 2;
 }
 
 .navbar li.active {
     display: inline-block;
-    padding: 10px 20px; /* Adjust padding to control the size of the "tile" */
-    background-color: blueviolet; /* Change to the desired background color */
-    color: white; /* Text color for the active link */
+    padding: 10px 20px;
+    background-color: #5A5A5A;
+    color: white;
     font-weight: bold;
 }
 
@@ -93,20 +96,20 @@ button:hover {
   }
   .food-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Create two columns */
-    grid-gap: 5px; /* Adjust the gap between images */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
     text-align: center;
 }
 
 .food1 {
-    grid-column: 1 / span 2; /* Span two columns for the top image */
+    grid-column: 1 / span 2;
 }
 
 .food2, .food3 {
-    align-self: end; /* Align the second and third images to the bottom */
+    align-self: end;
 }
 
-/* Additional styling for images (e.g., width, height, etc.) */
+
 .food-grid img {
     max-width: 100%;
     height: auto;
@@ -114,34 +117,37 @@ button:hover {
 
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create two columns */
-    grid-template-rows: repeat(2, 1fr); /* Create two rows */
-    grid-gap: 1px; /* Adjust the gap between images */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1px;
     text-align: center;
 }
 
 .pet1 {
-    grid-column: 1; /* Align first image to the left column */
-    grid-row: 1; /* Align it to the top row */
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .pet2 {
-    grid-column: 2; /* Align second image to the right column */
-    grid-row: 1; /* Align it to the top row */
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .pet3 {
-    grid-column: 1; /* Align third image to the left column */
-    grid-row: 2; /* Align it to the bottom row */
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .pet4 {
-    grid-column: 2; /* Align fourth image to the right column */
-    grid-row: 2; /* Align it to the bottom row */
+    grid-column: 2;
+    grid-row: 2;
 }
 
-/* Additional styling for images (e.g., width, height, etc.) */
 .pet-grid img {
     max-width: 100%;
     height: auto;
+}
+
+h2{
+    text-align: center;
 }
